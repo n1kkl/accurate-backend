@@ -18,22 +18,22 @@ Eine kurze Anleitung findest du in diesem Abschnitt.
 ### 0. Development Tools installieren (falls noch nicht vorhanden)
 Wir arbeiten mit Yarn da es von der Performance her besser ist als NPM. Um Yarn zu installieren,
 müssen wir zuerst NPM installieren da Yarn darauf aufbaut. NPM kann auf der [Node.js Website](https://nodejs.org/en/download/)
-heruntergeladen werden. Sollte irgendein Problem auftreten kannst du mir auf Discord schreiben (`Nikkl#0001`).
+heruntergeladen werden.
 
 Nach der Installation kannst du Yarn installieren:
 ```shell
-C:\Users\FixiHartmann\accurate-backend> npm install --global yarn
+C:\Users\Max\accurate-backend> npm install --global yarn
 ```
 
 Zu guter Letzt müssen wir noch das Prisma CLI installieren:
 ```shell
-C:\Users\FixiHartmann\accurate-backend> yarn global add prisma
+C:\Users\Max\accurate-backend> yarn global add prisma
 ```
 
 ### 1. Packages installieren
 Jetzt müssen wir die Packages für dieses Projekt mit folgendem Befehl installieren:
 ```shell
-C:\Users\FixiHartmann\accurate-backend> yarn install
+C:\Users\Max\accurate-backend> yarn install
 ```
 
 ### 2. Dotenv File
@@ -42,7 +42,7 @@ Daten in einem Repository zu speichern wird das `.env` File von git ignoriert. E
 im Projekt Root bereits die `.env.example` Datei, diese kopieren wir jetzt, nennen die 
 Kopie `.env` und passen dann den Inhalt an.
 ```shell
-C:\Users\FixiHartmann\accurate-backend> copy .env.example .env
+C:\Users\Max\accurate-backend> copy .env.example .env
 ```
 
 ### 3. Schema von der DB herunterladen
@@ -50,7 +50,7 @@ Dieser Befehl sollte jedes Mal ausgeführt werden, wenn sich am DB Schema irgend
 geändert hat.
 
 ```shell
-C:\Users\FixiHartmann\accurate-backend> prisma db push
+C:\Users\Max\accurate-backend> prisma db push
 ```
 
 ## Ressourcen
